@@ -1,0 +1,229 @@
+/*********************************************/
+                /* IMPORTS */
+/*********************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/*********************************************/
+              /* MAIN STYLES */
+/*********************************************/
+
+:root {
+
+    /* COLORS */
+    --black: hsl(0, 0%, 7%);
+    --dark-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
+    --grey-100: hsl(214, 17%, 92%);
+    --grey-200: hsl(0, 0%, 81%);
+    --grey-300: hsl(215, 10%, 67%);
+    --grey-400: hsl(224, 10%, 45%);
+    --grey-500: hsl(217, 19%, 35%);
+    --purple-50: hsl(260, 100%, 95%);
+    --purple-300: hsl(264, 82%, 80%);
+    --purple-500: hsl(263, 55%, 52%);
+
+    /* SPACING */
+    --spacing-500: 40px;
+    --spacing-400: 32px;
+    --spacing-300: 24px;
+    --spacing-200: 16px;
+    --spacing-100: 8px;
+    --spacing-50: 4px;
+
+}
+
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/* FONTS */
+
+.barlow-preset-1 {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0px;
+}
+
+.barlow-preset-2 {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 110%;
+    letter-spacing: 0px;
+}
+
+.barlow-preset-3 {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13px;
+    line-height: 140%;
+    letter-spacing: 0px;
+}
+
+.barlow-preset-4 {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 11px;
+    line-height: 110%;
+    letter-spacing: 0px;
+}
+
+.content-container {
+    /* width: 100vw; */
+    /* height: 100vh; */
+    background: #F6F5F6;
+    padding-top: var(--spacing-400);
+    padding-bottom: var(--spacing-400);
+    display: grid;
+    justify-content: center;
+    gap: var(--spacing-400);
+}
+
+.sec-container {
+    width: 305px;
+    padding: var(--spacing-400);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: var(--spacing-200);
+    border-radius: 8px;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+}
+
+.profile-container {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+/* Section Containers */
+
+.section-1-container {
+    background: var(--purple-500);
+    color: var(--white);
+}
+
+.sec-1-about, .sec-1-content-copy {
+    color: var(--purple-50);
+}
+
+.section-2-container {
+    background: var(--grey-500);
+    color: var(--white);
+}
+
+.sec-2-about {
+    color: var(--grey-300);
+}
+
+.sec-2-content-copy {
+    color: var(--grey-100);
+}
+
+.section-3-container {
+    background: var(--white);
+    color: var(--grey-500);
+}
+
+.sec-3-about, .sec-3-content-copy {
+    color: var(--grey-400);
+}
+
+.section-4-container {
+    background: var(--dark-blue);
+    color: var(--white);
+}
+
+.sec-4-content-heading {
+    color: var(--grey-200);
+}
+
+.sec-4-content-copy {
+    color: var(--grey-100);
+}
+
+.section-5-container {
+    background: var(--white);
+    color: var(--grey-500);
+}
+
+.sec-5-about {
+    color: var(--grey-300);
+}
+
+.sec-5-content-copy {
+    color: var(--grey-400);
+}
+
+.profile-img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+}
+
+/* Profile Images */
+
+.section-1-profile-img {
+    border: 2px solid #A775F1;
+    background: url(../images/image-daniel.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+.section-2-profile-img {
+    background: url(../images/image-jonathan.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+.section-3-profile-img {
+    background: url(../images/image-jeanette.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+.section-4-profile-img {
+    border: 2px solid var(--purple-500);
+    background: url(../images/image-patrick.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+.section-5-profile-img {
+    background: url(../images/image-kira.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+.profile-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-50);
+}
+
+.profile-info-container p {
+    margin: 0px;
+}
+
+.content-heading, .content-copy {
+    margin: 0px;
+}
+
+
+/*********************************************/
+             /* MEDIA QUERIES */
+/*********************************************/
